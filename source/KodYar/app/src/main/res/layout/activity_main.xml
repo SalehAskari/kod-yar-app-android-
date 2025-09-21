@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity"
+    android:id="@+id/bg">
+
+    <TextView
+        android:id="@+id/hear"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="-20dp"
+        android:alpha="0"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/add_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:lottie_fileName="add_red.json"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/search_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:lottie_fileName="search_red.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="addBTN.json"
+        app:lottie_loop="true"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/search"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="search.json"
+        app:lottie_loop="true"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hear_select"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/select"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0"
+        android:background="@drawable/txt_style"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/language"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:buttonTint="@color/them"
+            android:checked="true"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:hint="Language"
+            android:textColorHint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/macos"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:hint="MacOS"
+            android:textColorHint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/windows"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:hint="Windows"
+            android:textColorHint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/linux"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:hint="Linux"
+            android:textColorHint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:hint="Other"
+            android:textColorHint="@color/white" />
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/list"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="1"
+        android:src="@drawable/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/back_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/sub"
+        app:layout_constraintStart_toStartOf="@+id/sub"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="back.json"
+        app:lottie_loop="true"
+        tools:ignore="MissingConstraints" />
+  <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/back_for_list"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/sub"
+        app:layout_constraintStart_toStartOf="@+id/sub"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="back.json"
+        app:lottie_loop="true"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/sub"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="41dp"
+        android:alpha="0"
+        android:background="@drawable/txt_style"
+        android:gravity="center"
+        android:fontFamily="@font/aviny"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hear"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tik"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="tick.json"
+        app:lottie_loop="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
