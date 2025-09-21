@@ -10,7 +10,7 @@ The app aims to make coding easier, smarter, and more accessible for everyone.
 Get the latest version of the app and install it on your Android device:
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/SalehAskari/kod-yar-app-android-/main/apk/base.apk">
+  <a href="https://raw.githubusercontent.com/SalehAskari/kod-yar-app-android-/main/apk/KodYar.apk">
     <img src="https://img.shields.io/badge/⬇️_Download-APK-brightgreen?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
   </a>
 </p>
